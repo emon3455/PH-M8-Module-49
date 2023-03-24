@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Calculate from '../Calculate/Calculate';
 
 const Watch = () => {
 
@@ -6,15 +7,15 @@ const Watch = () => {
 
     const increase = () =>{
         setCount(count=count + 1);
-        console.log(count);
     }
 
 
     return (
         <div>
             <h2>This is a counter</h2>
-            <p>Count: {count}</p>
+            <p>Let's Increase The count: {count}</p>
             <button onClick={increase}>Increase</button>
+            <Calculate counts={count}></Calculate>
         </div>
     );
 };
