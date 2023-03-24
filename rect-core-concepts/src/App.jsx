@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Device from './Components/Device/Device'
+import Watch from './Components/Watch/Watch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,8 @@ function App() {
 
       <Device name="I-phone" price="34000"></Device>
       <Device name="Samsu" price="44000"></Device>
+
+      <Watch> </Watch>
 
       <h1>Vite + React</h1>
       <div className="card">
